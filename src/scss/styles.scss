@@ -1,0 +1,31 @@
+@import './common/colors';
+
+// Font-Family
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Lato-Bold';
+    src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+  }
+  
+  // Font-Family Shorcut
+  .ff-LatoRegular {
+    font-family: 'Lato-Regular' !important;
+  }
+  .ff-LatoBold {
+    font-family: 'Lato-Bold' !important;
+  }
+
+%container {
+    background-color: $dark;
+    color: $rose;
+    height: 100vh;
+    padding: 20px 50px;
+    line-height: 50px;
+}
+
+body {
+    font-family: 'Lato-Regular';
+}

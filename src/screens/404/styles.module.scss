@@ -1,0 +1,13 @@
+@import '/src/scss/styles.scss';
+
+.container {
+    height: 100vh;
+    background-color: $dark;
+    color: $white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 50px;
+}
