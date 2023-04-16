@@ -16,6 +16,7 @@ export const Home = () => {
                 <CustomButton title='Calendar' linkTo="/calendar" />
                 <CustomButton title='Debounce' linkTo="/debounce" />
                 <CustomButton title='Notificación' linkTo="/notifications" />
+                <CustomButton title='React Query' linkTo="/react-query" />
             </Stack>
         </div>
     )

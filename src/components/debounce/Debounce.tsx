@@ -8,9 +8,6 @@ export const Debounce = () => {
       <Typography variant='h3'>
         Debounce
       </Typography>
-      <div>
-
-      </div>
       <CustomButton title="Volver al home" linkTo="/" />
     </div>
   )

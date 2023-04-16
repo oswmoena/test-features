@@ -4,6 +4,7 @@ import ErrorPage from '../../screens/404/404';
 import { Notifications } from "../notifications-sonner/Notifications";
 import { Calendar } from "../calendar-rdp/Calendar";
 import { Debounce } from "../debounce/Debounce";
+import { ReactQueryComponent } from "../react-query/ReactQueryComponent";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/debounce",
     element: <Debounce />
+  },
+  {
+    path: "/react-query",
+    element: <ReactQueryComponent />
   }
 ]);
 
