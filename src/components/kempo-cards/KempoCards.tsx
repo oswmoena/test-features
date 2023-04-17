@@ -26,14 +26,16 @@ export const KempoCards = () => {
             <Typography variant='h3'>
                 Kempo Cards
             </Typography>
-            <Typography variant='body2'>
-                “Vengo hacia ti con las manos vacías, no tengo armas, pero si soy obligado a defenderme, 
-                a defender mis principios o mi honor, si es cuestión de vida o muerte, del derecho o la injusticia... 
+            <Typography variant='body2' className={styles.creed}>
+                “Vengo hacia ti con las manos vacías, no tengo armas, pero si soy obligado a defenderme,
+                a defender mis principios o mi honor, si es cuestión de vida o muerte, del derecho o la injusticia...
                 entonces acá están mis armas, las manos vacías”
             </Typography>
-            <Button variant='outlined' onClick={forceRefresh}>Otro!</Button>
             <div className={styles.cardContainer}>
-                {item && <CustomCard name={item.name} hidden={item.hidden} desc={item.desc} key={item.id} />}
+                <Button data-testid="btn-refresh" variant='outlined' onClick={forceRefresh}>Otro!</Button>
+                <div>
+                    {item && <CustomCard name={item.name} hidden={item.hidden} desc={item.desc} key={item.id} />}
+                </div>
             </div>
             <CustomButton title="Volver al home" linkTo="/" />
         </div>
