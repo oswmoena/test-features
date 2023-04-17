@@ -5,6 +5,7 @@ import { Notifications } from "../notifications-sonner/Notifications";
 import { Calendar } from "../calendar-rdp/Calendar";
 import { Debounce } from "../debounce/Debounce";
 import { ReactQueryComponent } from "../react-query/ReactQueryComponent";
+import { KempoCards } from "../kempo-cards/KempoCards";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/react-query",
     element: <ReactQueryComponent />
+  },
+  {
+    path: "/kempo-cards",
+    element: <KempoCards />
   }
 ]);
 

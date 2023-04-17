@@ -17,6 +17,7 @@ export const Home = () => {
                 <CustomButton title='Debounce' linkTo="/debounce" />
                 <CustomButton title='Notificación' linkTo="/notifications" />
                 <CustomButton title='React Query' linkTo="/react-query" />
+                <CustomButton title='Kempo Cards' linkTo="/kempo-cards" />
             </Stack>
         </div>
     )
