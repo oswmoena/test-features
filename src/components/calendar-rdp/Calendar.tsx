@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, useRef, useState } from 'react'
+import React from 'react'
 import styles from './styles.module.scss';
 import { Typography } from '@mui/material';
 import { CustomButton } from '../Button/Button';

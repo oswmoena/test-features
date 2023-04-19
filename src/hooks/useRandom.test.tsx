@@ -3,10 +3,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useRandom } from "./useRandom";
 import { renderHook, waitFor } from "@testing-library/react";
 
-interface IWrapper {
-    children: ReactNode;
-}
-
 test("my first test", async () => {
     const queryClient = new QueryClient({
         defaultOptions: {

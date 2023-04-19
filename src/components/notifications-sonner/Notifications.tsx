@@ -11,7 +11,7 @@ export const Notifications = () => {
                 Notifications
             </Typography>
             <div>
-                <Toaster position="top-right" closeButton/>
+                <Toaster position="top-right" closeButton />
                 <Button variant='outlined' color='secondary' onClick={() => toast('hey, llegué !')}>
                     Muestrame la notificación !
                 </Button>

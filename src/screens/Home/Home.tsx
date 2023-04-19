@@ -2,6 +2,7 @@ import React from 'react'
 import { Stack, Typography } from '@mui/material'
 import styles from './styles.module.scss';
 import { CustomButton } from '../../components/Button/Button';
+import { paths } from '../../components/Router/main.routes';
 
 export const Home = () => {
     return (
@@ -13,11 +14,10 @@ export const Home = () => {
                 Choose your element to test:
             </Typography>
             <Stack spacing={3} direction="row">
-                <CustomButton title='Calendar' linkTo="/calendar" />
-                <CustomButton title='Debounce' linkTo="/debounce" />
-                <CustomButton title='Notificación' linkTo="/notifications" />
-                <CustomButton title='React Query' linkTo="/react-query" />
-                <CustomButton title='Kempo Cards' linkTo="/kempo-cards" />
+                {paths.map((item, index) =>
+                    index !== 0 &&
+                    (<CustomButton key={index} title={item.id || ""} linkTo={item.path || ""} />)
+                )}
             </Stack>
         </div>
     )

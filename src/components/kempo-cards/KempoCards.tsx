@@ -32,7 +32,7 @@ export const KempoCards = () => {
                 entonces acá están mis armas, las manos vacías”
             </Typography>
             <div className={styles.cardContainer}>
-                <Button data-testid="btn-refresh" variant='outlined' onClick={forceRefresh}>Otro!</Button>
+                <Button data-testid="btn-refresh" variant='outlined' sx={{ width: '100%' }} onClick={forceRefresh}>Otro!</Button>
                 <div>
                     {item && <CustomCard name={item.name} hidden={item.hidden} desc={item.desc} key={item.id} />}
                 </div>
